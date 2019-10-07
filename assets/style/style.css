@@ -1,0 +1,271 @@
+html{
+	height:100%;
+}
+
+/* initialize the attributes in body */
+body{
+	height:100%;
+	margin:0;
+	padding:0;
+	background-image:url(../Picture/leather.png);
+	background-repeat:repeat-x repeat-y;
+	line-height:150%;
+	color:#777777;
+	font-family:"Arial", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+a{
+	text-decoration:none;
+	border-radius:3px;
+}
+
+.navigation a:hover{
+	background-color:#cccccc;
+}
+
+h1{
+	margin:0;
+	padding:0;
+}
+
+p{
+	padding:10px;
+	margin:10px;
+}
+
+/* For the content in the body 
+   header & container box
+   make the whole page divided into 9 grids
+   name each grids
+   set the grid gap
+   set the colums width 
+   set the rows height to the max-content to be responsive*/
+.container{
+	min-height:90%;
+
+	display:grid;
+	grid-template-columns:auto 480px 480px auto;
+	grid-template-rows:max-content max-content max-content;
+	grid-row-gap:1em;
+	grid-template-areas:
+	"bg1 header1 header2 bg2"
+	"bg3 main main bg4"
+	"webFooter webFooter webFooter webFooter"
+}
+
+/* for header:Harper */
+.webName{
+	border-bottom:1px solid #cccccc; 
+	background-color:white;
+	margin-top:0px;	
+}
+
+.webName h1{
+	grid-area:header1;
+	background-color:#4aaaa5;
+	width:116px;
+	color:#ffffff;
+	padding:25px;
+	font-family:"Georgia", Times, "Times New Roman", serif;
+}
+
+/* for navigation bar */
+.navigation{
+	margin-top:0px;
+	padding-left:210px;
+	padding-top:30px;
+	background-color:#ffffff;
+	border-bottom:1px solid #cccccc; 
+	color:#ffffff;
+}
+
+.navigation a{
+	grid-area:header2;
+	padding:6px;
+	margin:6px;
+	color:#777777;
+}
+
+/*for the three navigation icons*/
+.navigation p{
+	padding:0;
+	margin:0;
+	color:#eeeeee;
+	display:inline-block;
+}
+
+/* for the container box */
+.containerBox{
+	grid-area:main;
+	border:1px solid #dddddd;
+	background-color:#ffffff;
+	padding:20px;
+	margin-top:20px;
+	height:0 auto;
+}
+
+/*for the header in the box*/
+.boxHeader{
+	margin:0;
+	color:#4aaaa5;
+}
+
+/*enable the texts float to next to the picture*/
+.imgBio{
+	float:left;
+	padding:20px;
+}
+
+/* for the area in the area beside the #webName & #avigation */
+.bg1,.bg2{
+	margin-top:0px;
+	background-color: #ffffff;
+	border-bottom:1px solid #cccccc; 
+}
+
+.bg3,.bg4{
+	background-image:url(../Picture/leather.png);
+	background-repeat:repeat-x repeat-y;
+}
+
+.myFooter{
+	grid-area:webFooter;
+	width:100%;
+	text-align:center;
+	background-color: #666666;
+	color:#dddddd;
+	border-top:8px solid #4aaaa5;
+}
+
+/*move the footer to the position*/
+.myFooter p{
+	margin-top:10px;
+	padding-top:24px;
+	margin-bottom:0px;
+}
+
+/*CSS For Form in Contact Html*/
+
+.webForm{
+	margin-top:20px;
+	color:gray;
+	line-height:250%;
+}
+
+/*set the parameters of the button*/
+#btn{
+	height:40px;
+	width:80px;
+	background-color:#4aaaa5;
+	color:white;
+	margin-top:2px;
+	border-radius:6px;
+	font-size:16px;
+}
+
+#btn:hover{
+	background-color:#288884;
+}
+
+/*set the parameters of the input areas of the form*/
+#userName,#userEmail{
+	width:100%;
+	height:40px;
+	color:lightgray;
+	border:1px solid #cccccc;
+	font-size:15px;
+	border-radius:2px;
+}
+
+/*this area is different from above cause it is a
+multi-line textarea */
+#userMessage{
+	width:100%;
+	height:100px;
+	color:lightgray;
+	border:1px solid #cccccc;
+	font-size:15px;
+	border-radius:2px;
+}
+
+/*For Portfolio Pictures in Portfolio.html*/
+
+.myPortfolio{
+	padding:30px 30px;
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-template-rows:250px;
+	grid-gap:1rem;
+	grid-template-areas:
+	"one two three"
+	"four five six"
+	"seven eight nine"
+}
+
+
+/*set the pictures on each section*/
+.myPortfolioOne{
+	grid-area:one;
+	background-image:url(../Picture/P1.jpg);
+	background-repeat:no-repeat;
+	width:250px;
+	height:auto;
+}
+
+.myPortfolioTwo{
+	grid-area:two;
+	background-image:url(../Picture/P2.jpg);
+	background-repeat:no-repeat;
+	width:250px;
+	height:auto;
+}
+
+.myPortfolioThree{
+	grid-area:three;
+	background-image:url(../Picture/P3.jpg);
+	background-repeat:no-repeat;
+	width:250px;
+	height:auto;
+}
+
+.myPortfolioFour{
+	grid-area:four;
+	background-image:url(../Picture/P1.jpg);
+	background-repeat:no-repeat;
+	width:250px;
+	height:auto;
+}
+
+.myPortfolioFive{
+	grid-area:five;
+	background-image:url(../Picture/P2.jpg);
+	background-repeat:no-repeat;
+	width:250px;
+	height:auto;
+}
+
+.myPortfolio a{
+	text-decoration:none;
+	color:#ffffff;
+}
+
+/*.myPortfolio a:hover{
+	color:#dddddd;
+}*/
+
+/*set the parameters of the tags on the pictures
+  and the effects after hover*/
+.projectTags{
+	height:45px;
+	background-color: #4aaaa5;
+	margin-top:120px;
+	text-align:center;
+}
+
+.projectTags:hover{
+	background-color:#288884;
+}
+
+
+
+

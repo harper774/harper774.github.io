@@ -1,0 +1,62 @@
+body{
+}
+
+.container{
+}
+
+.containerBox{
+	position:relative;
+	left:100px;
+}
+
+.webHeader{
+	height:100px;
+	width:300px;
+	background-color:#4aaaa5;
+}
+
+.myName{
+	position:absolute;
+	left:10px;
+
+}
+
+
+.navi{
+	position:absolute;
+	left:550px;
+	top:50px;
+}
+
+
+.bg3{
+
+}
+
+.contentBox{
+	position:absolute;
+	top:160px;
+	width:960px;
+}
+
+.contentHeader{
+
+
+}
+
+.box{
+	position: absolute;
+	top:200px;
+}
+
+.bioImg{
+	float:left;
+}
+
+.content{
+}
+
+.webFooter{
+	position:relative;
+	top:800px;
+}
