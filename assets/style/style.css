@@ -242,6 +242,7 @@ multi-line textarea */
 	background-repeat:no-repeat;
 	width:250px;
 	height:auto;
+	justify-self: center;
 }
 
 .myPortfolioTwo{
@@ -250,6 +251,7 @@ multi-line textarea */
 	background-repeat:no-repeat;
 	width:250px;
 	height:auto;
+	justify-self: center;
 }
 
 .myPortfolioThree{
@@ -258,6 +260,7 @@ multi-line textarea */
 	background-repeat:no-repeat;
 	width:250px;
 	height:auto;
+	justify-self: center;
 }
 
 .myPortfolioFour{
@@ -266,6 +269,7 @@ multi-line textarea */
 	background-repeat:no-repeat;
 	width:250px;
 	height:auto;
+	justify-self: center;
 }
 
 .myPortfolioFive{
@@ -274,6 +278,7 @@ multi-line textarea */
 	background-repeat:no-repeat;
 	width:250px;
 	height:auto;
+	justify-self: center;
 }
 
 .myPortfolio a{
@@ -411,7 +416,7 @@ multi-line textarea */
 	.myPortfolio{
 		/* padding:30px 30px; */
 		display:grid;
-		align-items: center;
+		align-items: start;
 		grid-template-columns:1fr;
 		grid-template-rows:max-content;
 		grid-gap:1rem;
@@ -422,6 +427,14 @@ multi-line textarea */
 		"four"
 		"five" 
 		"six"
+	}
+
+	.bg1,.bg2{
+
+	}
+	
+	.bg3,.bg4{
+
 	}
 
 	
