@@ -109,6 +109,23 @@ p{
 	height:0 auto;
 }
 
+.line{
+	width:100%;
+	height:1px;
+	background:gray;
+}
+
+/* .containerWrapper{
+	display:grid;
+	grid-template-columns:auto;
+	grid-template-rows:max-content;
+	grid-row-gap:0em;
+	grid-template-areas:
+	"boxheader"
+	"picture"
+	"paragraph"
+} */
+
 /*for the header in the box*/
 .boxHeader{
 	margin:0;
@@ -208,7 +225,7 @@ multi-line textarea */
 	padding:30px 30px;
 	display:grid;
 	grid-template-columns:1fr 1fr 1fr;
-	grid-template-rows:250px;
+	grid-template-rows:auto;
 	grid-gap:1rem;
 	grid-template-areas:
 	"one two three"
@@ -286,7 +303,7 @@ multi-line textarea */
 
 		display:grid;
 		grid-template-columns:auto;
-		grid-template-rows:max-content max-content;
+		grid-template-rows:max-content;
 		grid-row-gap:0em;
 		grid-template-areas:
 		"header1"
@@ -301,12 +318,14 @@ multi-line textarea */
 		align-items:center;
 
 		margin-top:0px;
-		padding:auto;
+		padding:20px 0px;
 		background-color:#ffffff;
 		border-bottom:1px solid #cccccc; 
 		color:#ffffff;
 	}
-
+	.navbar{
+		text-align: center;
+	}
 	.navigation a{
 
 		padding:6px;
@@ -334,7 +353,7 @@ multi-line textarea */
 	}
 
 	.webName h1{
-		
+		padding-left:0px;
 		align-items:center;
 		grid-area:header1;
 		background-color:#4aaaa5;
@@ -345,17 +364,60 @@ multi-line textarea */
 	}
 
 	.imgBio{
-
+		text-align: center;
 		padding:20px;
 		margin-right:10px;
 	}
 
 	img{
 
-	width:100%;
-	height:auto;
+		width:auto;
+		height:auto;
 	}
 
+	.containerWrapper{
+		display:grid;
+		grid-template-columns:auto;
+		grid-template-rows:max-content;
+		grid-row-gap:0em;
+		grid-template-areas:
+		"boxheader"
+		"picture"
+		"paragraph"
+	}
+
+	.boxHeader{
+		grid-area:boxheader;
+		margin:0;
+		color:#4aaaa5;
+		font-size:25px;
+		margin:10px 0px 20px 5px;
+	}
+	
+	.imgBio{
+		grid-area:picture;
+		float:left;
+		padding:20px;
+		margin-right:10px;
+	}
+
+	.myPortfolio{
+		/* padding:30px 30px; */
+		display:grid;
+		align-items: center;
+		grid-template-columns:1fr;
+		grid-template-rows:max-content;
+		grid-gap:1rem;
+		grid-template-areas:
+		"one"
+		"two" 
+		"three"
+		"four"
+		"five" 
+		"six"
+	}
+
+	
 }
 
 
