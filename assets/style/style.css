@@ -4,8 +4,8 @@ html{
 
 /* initialize the attributes in body */
 body{
-	height:100vh;
-	width:100vw;
+	height:100%;
+
 	margin:0;
 	padding:0;
 	background-image:url(../Picture/leather.png);
@@ -43,13 +43,14 @@ p{
    set the grid gap
    set the colums width 
    set the rows height to the max-content to be responsive*/
-.container{
-	min-height:90%;
-	padding-bottom:25px;
+
+   .container{
+	min-height:100%;
+	padding-bottom:0px;
 
 	display:grid;
 	grid-template-columns:auto 480px 480px auto;
-	grid-template-rows:max-content max-content max-content;
+	grid-template-rows:auto 1fr auto;
 	grid-row-gap:1em;
 	grid-template-areas:
 	"bg1 header1 header2 bg2"
@@ -160,7 +161,7 @@ img{
 
 .myFooter{
 	grid-area:webFooter;
-	width:100vw;
+
 	text-align:center;
 	background-color: #666666;
 	color:#dddddd;
