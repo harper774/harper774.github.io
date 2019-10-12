@@ -1,10 +1,10 @@
 html{
-	height:100%;
+	height:100vh;
 }
 
 /* initialize the attributes in body */
 body{
-	height:100%;
+	height:100vh;
 
 	margin:0;
 	padding:0;
@@ -45,7 +45,7 @@ p{
    set the rows height to the max-content to be responsive*/
 
    .container{
-	min-height:100%;
+	min-height:100vh;
 	padding-bottom:0px;
 
 	display:grid;
@@ -106,8 +106,8 @@ p{
 	border:1px solid #dddddd;
 	background-color:#ffffff;
 	padding:20px;
-	margin-top:20px;
-	height:0 auto;
+	margin-bottom:auto;
+	height:auto;
 }
 
 .line{
@@ -226,8 +226,8 @@ multi-line textarea */
 	padding:30px 30px;
 	display:grid;
 	grid-template-columns:1fr 1fr 1fr;
-	grid-template-rows:auto;
-	grid-gap:1rem;
+	grid-template-rows:max-content;
+	grid-gap:2rem;
 	grid-template-areas:
 	"one two three"
 	"four five six"
@@ -288,6 +288,7 @@ multi-line textarea */
 /*set the parameters of the tags on the pictures
   and the effects after hover*/
 .projectTags{
+
 	height:45px;
 	background-color: #4aaaa5;
 	margin-top:120px;
@@ -383,6 +384,7 @@ multi-line textarea */
 		grid-row-gap:0em;
 		grid-template-areas:
 		"boxheader"
+		"line"
 		"picture"
 		"paragraph"
 	}
@@ -393,6 +395,10 @@ multi-line textarea */
 		color:#4aaaa5;
 		font-size:25px;
 		margin:10px 0px 20px 5px;
+	}
+
+	.line{
+		grid-area:line;
 	}
 	
 	.imgBio{
